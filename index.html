@@ -58,7 +58,7 @@
                             <select class="xl:grid w-28 border-black border-solid border-1" id="coach-select">
                                 
                             </select>               
-                            <button class="p-5 bg-gray-300 mr-5">Сортировка</button>
+                            <button class="p-5 bg-gray-300 mr-5 sm:flex hidden">Сортировка</button>
                         </div>
                   <!-- Table 1 -->
                     <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
@@ -241,30 +241,30 @@
 </section>
 <!-- 2xl:mt-16(большие экраны) sm:mt-8(маленькие экраны) -->
 <section>
-  <div class="container bg-gray-400 w-full min-w-0 max-w-full min-h-0 max-h-60 h-56 sm:h-96 table-main relative bottom-72">
-    <div class="select_container h-60 xl:h-96">
+  <div class="container bg-gray-400 w-full min-w-0 max-w-full min-h-0 max-h-60 sm:h-56 table-main relative bottom-72 mb-80 h-96">
+    <div class="select_container xl:h-10 sm:h-96">
     <div>
       <p class="select-text text-white flex bottom-10 top-4 left-10 absolute">Награды</p>
     </div>
     <div class="svg flex justify-center absolute left-36 2xl:mt-16 sm:mt-8 xl:flex-no-wrap flex-col xl:grid grid-flow-col">
-    <div class="select_container-svg-1 mr-16 flex justify-start">
+    <div class="select_container-svg-1 mr-16 flex justify-start sm:mt-0 -mt-0.5">
       <img class = "w-25 h-25 mr-3" src="./svg/german-design-award.svg" alt="">
-      <span class="text-base font-normal text-white mt-5">German Design Awardbr <br>
+      <span class="sm:text-base text-xs font-normal text-white mt-3 sm:w-52 w-40">German Design Awardbr <br>
         2021</span>
     </div>
     <div class="select_container-svg-2 mr-16 flex justify-start">
-      <img class = "w-20 h-20 mr-3" src="./svg/a-design-award.svg" alt="">
-      <span class="text-sm font-normal text-white mt-5">Gold A’ Design Award <br>
+      <img class = "sm:w-20 sm:h-20 w-15 h-15 mr-3" src="./svg/a-design-award.svg" alt="">
+      <span class="sm:text-base text-xs font-normal text-white mt-5 sm:w-52 w-40">Gold A’ Design Award <br>
         2021</span>
     </div>
     <div class="select_container-svg-3 mr-16 flex justify-start">
-      <img class = "w-20 h-20 mr-3" src="./svg/if-design-award.svg" alt="">
-      <span class="text-sm font-normal text-white mt-5">IF Design Award <br>
+      <img class = "sm:w-20 sm:h-20 w-15 h-15 mr-3" src="./svg/if-design-award.svg" alt="">
+      <span class="sm:text-base text-xs font-normal text-white mt-5 sm:w-52 w-40">IF Design Award <br>
         2020</span>
     </div>
     <div class="select_container-svg-4 mr-16 flex justify-start">
-      <img class = "w-20 h-20 mr-3" src="./svg/good-design-award.svg" alt="">
-      <span class="text-sm font-normal text-white mt-5">Good Design Award <br>
+      <img class = "sm:w-20 sm:h-20 w-15 h-15 mr-3" src="./svg/good-design-award.svg" alt="">
+      <span class="sm:text-base text-xs font-normal text-white mt-5 sm:w-52 w-40">Good Design Award <br>
         2019</span>
     </div>
   </div>
@@ -272,39 +272,32 @@
   </div>
 </section>
 
-<!-- <section>
-  <div class="container mb-20 flex justify-center">
-    <div class="slider block">
-      <div class="slide-container">
-        <img src="./img/concept1.png" alt="Image 1" class="">
-        <img src="./img/concept2.png" alt="Image 2" class="slide">
-      </div>
-    </div>
-  </div> 
-</section> -->
 
 <!-- Line -->
-<!-- <div class="container_two-line"></div> -->
+<div class="relative bottom-96">
+  <div class="container_two-line static top-96"></div>
 
-<!-- <section class="container_two flex justify-center mt-20">
-  <div class="container relative flex top-55">
-    <div class="container_two-text">
-      <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">about us</h5>
-      <h6 class="text-6xl font-normal">We help to bring your dream home to reality</h6>
-      <span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.  Optio ipsam atque cupiditate temporibus corporis vitae, laborum   laboriosam laudantium iure eius nisi, doloremque labore necessitatibus  asperiores ducimus deserunt numquam repellat ex.</span>
+  <section class="container_two flex justify-center mt-20 static">
+    <div class="container sm:flex ml-36 justify-between sm:mr-0 mr-72 xl:right-32 sm:left-60"> <!--mr-96-->
+      <div class="container_two-text xl:w-full w-64">
+        <h5 class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl sm:w-36">about us</h5>
+        <h6 class="xl:text-6xl font-normal sm:text-xs xl:w-full sm:w-36">We help to bring your dream home to reality</h6>
+        <span class="xl:w-full sm:w-36">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>  
+          Optio ipsam atque cupiditate temporibus corporis vitae, laborum   laboriosam laudantium iure eius nisi, doloremque labore necessitatibus  asperiores ducimus deserunt numquam repellat ex.</span>
+      </div>
+      <div class="container_two-img flex justify-between sm:mr-32"> <!--sm:flex-row flex-col -->
+        <img class="sm:mb-10" src="./img/Image.svg" alt="">
+        <img class="ml-5 mt-15" src="./img/Image (1).svg" alt="">
+      </div>
     </div>
-    <div class="container_two-img flex justify-between">
-      <img src="./img/Image.svg" alt="">
-      <img class="ml-7 mt-15" src="./img/Image (1).svg" alt="">
-    </div>
+  </section>
+  <!-- Number -->
+  <div class="number_block  flex justify-center">
+    <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">100%</span><span class="text-sm pr-16 pt-2 sm:flex hidden">SATISFITATION <br> CLIENTS</span>
+    <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">250</span><span class="text-sm pr-16 pt-2 sm:flex hidden">EMPLOYEES ON <br> WORLDWIDE</span>
+    <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">3469</span><span class="text-sm pr-16 pt-2 sm:flex hidden">PROJECTS COMPLETED <br> ON 60 COUNTRIES</span>
   </div>
-</section> -->
-<!-- Number -->
-<!-- <div class="number_block mt-16 flex justify-center">
-  <span class="text-6xl pr-3">100%</span><span class="text-sm pr-16 pt-2">SATISFITATION <br> CLIENTS</span>
-  <span class="text-6xl pr-3">250</span><span class="text-sm pr-16 pt-2">EMPLOYEES ON <br> WORLDWIDE</span>
-  <span class="text-6xl pr-3">3469</span><span class="text-sm pr-16 pt-2">PROJECTS COMPLETED <br> ON 60 COUNTRIES</span>
-</div> -->
+</div>
 
 <!-- CT BLOCK -->
 <!-- <section class="container_three flex justify-center mt-64 ml-28">
@@ -315,7 +308,7 @@
     </div>
 </section> -->
 
-<div class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 xl:flex-no-wrap ml-2 flex-col relative bottom-80">  <!--xl:flex-no-wrap flex-col-->
+<div class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 xl:flex-no-wrap ml-1 flex-col relative bottom-52">  <!--xl:flex-no-wrap flex-col-->
   <div class="one mb-5">
     <img class = "pl-5 pt-5" src="./svg/Service Icon.svg" alt="">
     <h2 class="mt-10 ml-6 mr-6 text-4xl font-normal">Architectural & Interior design</h2>
@@ -336,39 +329,39 @@
 </div>
 
 <!-- CF BLOCK -->
-<!-- <section class="container_four flex justify-center mt-64 ml-28">
-  <div class="container relative flex top-55">
-    <div class="container_two-text mr-24">
-      <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">RECENT WORKS</h5>
-      <h6 class="text-6xl font-normal">Some of our crafts made with love</h6>
-      <img src="./img/Image (3).svg" alt="">
-      <h4 class="text-4xl font-normal mt-6">Villa Furnishing & Interior</h4>
-      <span class="text-lg font-light text-neutral-400 mw-72">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.</span><br>
-      <button class="button-contact mt-24 text-sm"><a href="#">CONTACT US</a></button>
+<section class="container_two flex justify-center mt-10">
+  <div class="container relative flex bottom-48 xl:right-32 sm:left-60 sm:mr-0 mr-36 sm:flex-row flex-col">
+    <div class="container_two-text mr-24 sm:mb-0 mb-28">
+      <h5 class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl sm:w-60">RECENT WORKS</h5>
+      <h6 class="xl:text-6xl font-normal sm:text-xs xl:w-full sm:w-36">Some of our crafts made with love</h6>
+      <img class="sm:w-full sm:h-full w-60 h-52" src="./img/Image (3).svg" alt="">
+      <h4 class="xl:text-4xl font-normal mt-6 sm:w-60">Villa Furnishing & Interior</h4>
+      <span class="text-lg font-light text-neutral-400 xl:w-full sm:w-36">Lorem ipsum dolor sit amet. <br> Faucibus fringilla dui amet faucibus. <br> Erat id laoreet posuere etiam morbi.</span><br>
+      <button class="button-contact xl:mt-24 sm:mt-8 text-sm"><a href="#">CONTACT US</a></button>
     </div>
-    <div>
+    <div class="">
       <img src="./img/Image (2).svg" alt="">
-      <h4 class="text-4xl font-normal">Luxury Hotel Renovation</h4>
+      <h4 class="xl:text-4xl font-normal sm:w-60">Luxury Hotel Renovation</h4>
       <span class="text-lg font-light text-neutral-400 mw-72">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam.</span>
       <img class = "mt-20" src="./img/Image (4).svg" alt="">
-      <h4 class="text-4xl font-normal ">Residence Swimming Pool</h4>
+      <h4 class="xl:text-4xl font-normal sm:w-60">Residence Swimming Pool</h4>
       <span class="text-lg font-light text-neutral-400 mw-72">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam.</span>
     </div>
-</section> -->
+</section>
 
 <!-- Line -->
 <div class="container_two-line sm:static"></div>
 
 <!-- FOOTER -->
-<footer class="footer relative">
+<footer class="footer relative p-0">
 
   <div class="dekstop-container flex bottom-10 justify-between">
     <div class="container flex flex-col">
-      <div class="dekstop-container-left sm:text-left">
+        <div class="dekstop-container-left sm:text-left sm:mt-60">
           <h2 class="footer-contaiber-text">Launch your rowing experience with us!</h2>
           <span class="footer-contaiber-text-2 underline color-gold">Send us a hi</span>
         </div>
-        <div class="dekstop-container-right w-15 flex-col text-left xl:min-w-full sm:text-right">
+        <div class="dekstop-container-right w-15 flex-col text-left xl:min-w-full sm:text-right sm:mb-28">
           <h3 class="text-xl">Russia,Saint-Petersburg</h3>
           <span>Email:</span>
           <p><a href="m3sades@yandex.ru">m3sades@yandex.ru</a></p>

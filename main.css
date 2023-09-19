@@ -544,10 +544,10 @@ bottom: 120px;
   /* Section Container Two */
   .container_two{
     max-width: 1500px;
-    margin-left: 200px;
+    margin-left: 100px;
   }
 
-  .container_two-text::before{
+  /* .container_two-text::before{
     content: '';
     position: absolute;
     height: 1px;
@@ -556,8 +556,9 @@ bottom: 120px;
     display: flex;
     left: 0;
     margin-left: 0px;
-    top: 13px;
-  }
+    top: 10px;
+  } */
+
   .container_two-line{
     content: '';
     position: relative;
@@ -617,3 +618,9 @@ bottom: 120px;
     color: white;
     background-color: #996830;
   }
+
+  /* Img */
+  /* .img{
+    width: 592px;
+    height: 444px;
+  } */
