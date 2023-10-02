@@ -21,8 +21,8 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="w-full absolute xl:static sm:overflow-x-hidden max-w-full min-w-0 max-h-96 xl:overflow-x-hidden h-full">
-<header class="header bg-gray-400 text-white absolute xl:w-full">
+<body class="">
+<header class="header bg-gray-400 text-white absolute xl:w-full w-full">
     <div class="container xl:max-w-xs">
         <img
             alt="IMAGE144"
@@ -30,6 +30,7 @@
             class="header-image1"
         />
         <div class="header-nav-menu">
+          <div class="container sm:grid sm:grid-cols-3 sm:w-full w-10 sm:p-0">
             <div class="header-menu-item xl:max-xl:text-xs">
             <span class="header-text text-white"><span>Главная</span></span>
             </div>
@@ -43,6 +44,7 @@
             <div class="header-menu-item2">
             <span class="header-text text-white"><span>О нас</span></span>
             </div>
+          </div>
         </div>
     </div>
 </header>
@@ -52,13 +54,13 @@
                 <div class="container">           
                     <h1 class="font-bold uppercase text-3xl text-center mb-1 min-w-min">Результаты соревнований</h1>
                     <p class="text-center mb-1 color-gold">Первенство Санкт-Петербурга по гребле-индор</p>
-                    <span>17 Февраля 2023г.</span><br>
+                    <span class="sm:mr-0 ml-2">17 Февраля 2023г.</span><br>
                         <div class="flex justify-end">
     
                             <select class="xl:grid w-28 border-black border-solid border-1" id="coach-select">
                                 
                             </select>               
-                            <button class="p-5 bg-gray-300 mr-5 sm:flex hidden">Сортировка</button>
+                            <button class="p-5 bg-gray-300 mr-5 sm:flex hidden" id="filter-button">Сортировка</button>
                         </div>
                   <!-- Table 1 -->
                     <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
@@ -82,7 +84,7 @@
                     <!-- </div> -->
 
                   <!-- Table 2 -->
-                  <table class="w-full flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 text-center">
+                  <table class="sm:w-full w-80 flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 text-center">
                     <thead class="text-white">
                       <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-5 sm:mb-0">
                         <th class="p-3 text-left">№</th>
@@ -158,7 +160,7 @@
                       </tr>
 
                     </thead>
-                    <tbody class="flex-1 sm:flex-none text-center">
+                    <tbody class="flex-1 sm:flex-none text-center" id="table-body">
                       <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
                         <td class="border-grey-light border hover:bg-gray-100 p-3">1</td>
                         <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">Масалов Дмитрий Алексеевич</td>
@@ -241,28 +243,28 @@
 </section>
 <!-- 2xl:mt-16(большие экраны) sm:mt-8(маленькие экраны) -->
 <section>
-  <div class="container bg-gray-400 w-full min-w-0 max-w-full min-h-0 max-h-60 sm:h-56 table-main relative bottom-72 mb-80 h-96">
+  <div class="container bg-gray-400 w-full min-w-0 max-w-full sm:h-56 h-72 table-main relative bottom-72 mb-80">
     <div class="select_container xl:h-10 sm:h-96">
     <div>
       <p class="select-text text-white flex bottom-10 top-4 left-10 absolute">Награды</p>
     </div>
     <div class="svg flex justify-center absolute left-36 2xl:mt-16 sm:mt-8 xl:flex-no-wrap flex-col xl:grid grid-flow-col">
-    <div class="select_container-svg-1 mr-16 flex justify-start sm:mt-0 -mt-0.5">
+    <div class="select_container-svg-1 sm:mr-16 sm:ml-0 -ml-20 flex justify-start sm:mt-0 mt-3">
       <img class = "w-25 h-25 mr-3" src="./svg/german-design-award.svg" alt="">
       <span class="sm:text-base text-xs font-normal text-white mt-3 sm:w-52 w-40">German Design Awardbr <br>
         2021</span>
     </div>
-    <div class="select_container-svg-2 mr-16 flex justify-start">
+    <div class="select_container-svg-2 sm:mr-16 sm:ml-0 -ml-20 flex justify-start">
       <img class = "sm:w-20 sm:h-20 w-15 h-15 mr-3" src="./svg/a-design-award.svg" alt="">
       <span class="sm:text-base text-xs font-normal text-white mt-5 sm:w-52 w-40">Gold A’ Design Award <br>
         2021</span>
     </div>
-    <div class="select_container-svg-3 mr-16 flex justify-start">
+    <div class="select_container-svg-3 sm:mr-16 sm:ml-0 -ml-20 flex justify-start">
       <img class = "sm:w-20 sm:h-20 w-15 h-15 mr-3" src="./svg/if-design-award.svg" alt="">
       <span class="sm:text-base text-xs font-normal text-white mt-5 sm:w-52 w-40">IF Design Award <br>
         2020</span>
     </div>
-    <div class="select_container-svg-4 mr-16 flex justify-start">
+    <div class="select_container-svg-4 sm:mr-16 sm:ml-0 -ml-20 flex justify-start">
       <img class = "sm:w-20 sm:h-20 w-15 h-15 mr-3" src="./svg/good-design-award.svg" alt="">
       <span class="sm:text-base text-xs font-normal text-white mt-5 sm:w-52 w-40">Good Design Award <br>
         2019</span>
@@ -278,26 +280,28 @@
   <div class="container_two-line static top-96"></div>
 
   <section class="container_two flex justify-center mt-20 static">
-    <div class="container sm:flex ml-36 justify-between sm:mr-0 mr-72 xl:right-32 sm:left-60"> <!--mr-96-->
+    <div class="container sm:flex ml-36 justify-between sm:mr-0 mr-72 xl:right-32 sm:left-60 xl:w-full w-full sm:px-0 px-1"> <!--mr-96-->
       <div class="container_two-text xl:w-full w-64">
         <h5 class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl sm:w-36">about us</h5>
-        <h6 class="xl:text-6xl font-normal sm:text-xs xl:w-full sm:w-36">We help to bring your dream home to reality</h6>
+        <h6 class="sm:text-6xl italic sm:normal font-normal text-3xl xl:w-full sm:w-36">We help to bring your dream home to reality</h6>
         <span class="xl:w-full sm:w-36">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>  
           Optio ipsam atque cupiditate temporibus corporis vitae, laborum   laboriosam laudantium iure eius nisi, doloremque labore necessitatibus  asperiores ducimus deserunt numquam repellat ex.</span>
       </div>
       <div class="container_two-img flex justify-between sm:mr-32"> <!--sm:flex-row flex-col -->
-        <img class="sm:mb-10" src="./img/Image.svg" alt="">
-        <img class="ml-5 mt-15" src="./img/Image (1).svg" alt="">
+        <img class="sm:mb-10 sm:w-64 sm:h-96 w-32 h-60" src="./img/Image.svg" alt="">
+        <img class="sm:ma-5 ml-4 mt-15 sm:w-64 sm:h-96 w-32 h-60" src="./img/Image (1).svg" alt="">
       </div>
     </div>
   </section>
   <!-- Number -->
-  <div class="number_block  flex justify-center">
+  <div class="number_block  flex justify-center before:w-full">
     <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">100%</span><span class="text-sm pr-16 pt-2 sm:flex hidden">SATISFITATION <br> CLIENTS</span>
     <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">250</span><span class="text-sm pr-16 pt-2 sm:flex hidden">EMPLOYEES ON <br> WORLDWIDE</span>
     <span class="xl:text-6xl sm:text-xs sm:flex hidden pr-3">3469</span><span class="text-sm pr-16 pt-2 sm:flex hidden">PROJECTS COMPLETED <br> ON 60 COUNTRIES</span>
   </div>
 </div>
+
+
 
 <!-- CT BLOCK -->
 <!-- <section class="container_three flex justify-center mt-64 ml-28">
@@ -308,23 +312,24 @@
     </div>
 </section> -->
 
-<div class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 xl:flex-no-wrap ml-1 flex-col relative bottom-52">  <!--xl:flex-no-wrap flex-col-->
-  <div class="one mb-5">
-    <img class = "pl-5 pt-5" src="./svg/Service Icon.svg" alt="">
-    <h2 class="mt-10 ml-6 mr-6 text-4xl font-normal">Architectural & Interior design</h2>
-    <p class="text-lg font-normal ml-6 mr-6">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
-  </div>
-  <div class="two mb-5">
-    <img class = "pl-5 pt-5" src="./svg/Service Icon (1).svg" alt="">
-    <h2 class="mt-10 ml-6 mr-6 text-4xl font-normal">Building Renovation</h2>
-    <p class="text-lg font-normal ml-6 mr-6">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+<div class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 xl:flex-no-wrap sm:ml-32 flex-col relative bottom-52">  <!--xl:flex-no-wrap flex-col-->
+  <div class="container sm:grid sm:grid-cols-3 sm:w-full w-10 sm:px-0 px-5">
+    <div class="one mb-5 sm:w-80 w-64">
+      <img class = "pl-5 pt-5" src="./svg/Service Icon.svg" alt="">
+      <h2 class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium">Architectural & Interior design</h2>
+      <p class="text-lg font-normal ml-6 mr-6">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+    </div>
+    <div class="two mb-5 sm:w-80 w-64">
+      <img class = "pl-5 pt-5" src="./svg/Service Icon (1).svg" alt="">
+      <h2 class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium">Building Renovation</h2>
+      <p class="text-lg font-normal ml-6 mr-6">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
 
-  </div>
-  <div class="three mb-5">
-    <img class = "pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="">
-    <h2 class="mt-10 ml-6 mr-6 text-4xl font-normal">Construciton Management</h2>
-    <p class="text-lg font-normal ml-6 mr-6">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
-
+    </div>
+    <div class="three mb-5 sm:w-80 w-64">
+      <img class = "pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="">
+      <h2 class="mt-10 ml-6 mr-6 sm:text-4xl text-2xl sm:font-normal font-medium">Construciton Management</h2>
+      <p class="text-lg font-normal ml-6 mr-6">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+    </div>
   </div>
 </div>
 
@@ -333,20 +338,22 @@
   <div class="container relative flex bottom-48 xl:right-32 sm:left-60 sm:mr-0 mr-36 sm:flex-row flex-col">
     <div class="container_two-text mr-24 sm:mb-0 mb-28">
       <h5 class="uppercase text-yellow-500 sm:text-sm font-bold xl:text-2xl sm:w-60">RECENT WORKS</h5>
-      <h6 class="xl:text-6xl font-normal sm:text-xs xl:w-full sm:w-36">Some of our crafts made with love</h6>
-      <img class="sm:w-full sm:h-full w-60 h-52" src="./img/Image (3).svg" alt="">
-      <h4 class="xl:text-4xl font-normal mt-6 sm:w-60">Villa Furnishing & Interior</h4>
+      <h6 class="sm:text-6xl sm:normal italic font-normal text-3xl xl:w-full w-60">Some of our crafts made with love</h6>
+      <img class="sm:w-full sm:h-full w-64 h-60 sm:mx-0 mx-3" src="./img/Image (3).svg" alt="">
+      <h4 class="sm:text-4xl sm:font-normal text-2xl italic mt-6 sm:w-60">Villa Furnishing & Interior</h4>
       <span class="text-lg font-light text-neutral-400 xl:w-full sm:w-36">Lorem ipsum dolor sit amet. <br> Faucibus fringilla dui amet faucibus. <br> Erat id laoreet posuere etiam morbi.</span><br>
-      <button class="button-contact xl:mt-24 sm:mt-8 text-sm"><a href="#">CONTACT US</a></button>
+      <button class="button-contact xl:mt-24 sm:mt-8 text-sm sm:inline-block hidden"><a href="#">CONTACT US</a></button>
     </div>
-    <div class="">
-      <img src="./img/Image (2).svg" alt="">
-      <h4 class="xl:text-4xl font-normal sm:w-60">Luxury Hotel Renovation</h4>
-      <span class="text-lg font-light text-neutral-400 mw-72">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam.</span>
-      <img class = "mt-20" src="./img/Image (4).svg" alt="">
-      <h4 class="xl:text-4xl font-normal sm:w-60">Residence Swimming Pool</h4>
-      <span class="text-lg font-light text-neutral-400 mw-72">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam.</span>
+    <div class="sm:w-96 w-72">
+      <img class="sm:w-96 sm:h-80 w-64 h-60 sm:mx-0 mx-3" src="./img/Image (2).svg" alt="">
+      <h4 class="sm:text-4xl sm:font-normal text-2xl italic sm:w-60">Luxury Hotel Renovation</h4>
+      <span class="text-lg font-light text-neutral-400 xl:w-full w-72 sm:inline-block block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam.</span>
+      <img class = " sm:w-96 sm:h-80 w-64 h-60 sm:mx-0 mx-3" src="./img/Image (4).svg" alt="">
+      <h4 class="sm:text-4xl sm:font-normal text-2xl italic sm:w-60">Residence Swimming Pool</h4>
+      <span class="text-lg font-light text-neutral-400 xl:w-full w-72 sm:inline-block block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam.</span> <br>
+      <button class="button-contact xl:mt-24 sm:mt-8 text-sm sm:hidden mt-10 ml-5"><a href="#">CONTACT US</a></button>
     </div>
+  </div>
 </section>
 
 <!-- Line -->
@@ -354,9 +361,8 @@
 
 <!-- FOOTER -->
 <footer class="footer relative p-0">
-
   <div class="dekstop-container flex bottom-10 justify-between">
-    <div class="container flex flex-col">
+    <div class="container flex flex-col sm:px-5 px-1">
         <div class="dekstop-container-left sm:text-left sm:mt-60">
           <h2 class="footer-contaiber-text">Launch your rowing experience with us!</h2>
           <span class="footer-contaiber-text-2 underline color-gold">Send us a hi</span>
@@ -373,7 +379,7 @@
 
   <div class="container-footer flex xl:flex-col">
     <div class="dekstop-container1">
-        <span class="dekstop-text BodymdLight text-center sm:text-left">
+        <span class="dekstop-text BodymdLight text-left">
           <span>© 2023 Row-Compilition 2000m - 4000m</span>
         </span>
         <div class="dekstop-right-section sm:flex right-32 hidden">
